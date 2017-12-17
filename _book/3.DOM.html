@@ -1,0 +1,438 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>3. DOM · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="3.1.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    0.  前 言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="3.DOM.html">
+            
+                <a href="3.DOM.html">
+            
+                    
+                    3. DOM
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="3.1.html">
+            
+                <a href="3.1.html">
+            
+                    
+                    3.1 查找DOM元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="3.2.html">
+            
+                <a href="3.2.html">
+            
+                    
+                    3.2 DOM元素的名称和属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="3.3.html">
+            
+                <a href="3.3.html">
+            
+                    
+                    3.3 创建DOM元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="4.BOM.html">
+            
+                <a href="4.BOM.html">
+            
+                    
+                    4. BOM
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="4.1.html">
+            
+                <a href="4.1.html">
+            
+                    
+                    4.1 获取浏览器窗口大小
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="4.2.html">
+            
+                <a href="4.2.html">
+            
+                    
+                    4.2 打开新窗口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="4.3.html">
+            
+                <a href="4.3.html">
+            
+                    
+                    4.3 定时器和延时器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="4.4.html">
+            
+                <a href="4.4.html">
+            
+                    
+                    4.4 location对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="4.5.html">
+            
+                <a href="4.5.html">
+            
+                    
+                    4.5 navigator对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="4.6.html">
+            
+                <a href="4.6.html">
+            
+                    
+                    4.6 screen对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="4.7.html">
+            
+                <a href="4.7.html">
+            
+                    
+                    4.7 history对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >3. DOM</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="dom">DOM</h3>
+<ul>
+<li>DOM: &#x5C31;&#x662F;&#x64CD;&#x4F5C; window &#x4E0B;&#x7684; document&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x3002;</li>
+</ul>
+<hr>
+<h5 id="&#x5E38;&#x7528;&#x7684;-document-&#x7684;&#x5C5E;&#x6027;&#x83B7;&#x53D6;&#x9876;&#x5C42;dom&#x6811;&#x5BF9;&#x8C61;&#xFF1A;">&#x5E38;&#x7528;&#x7684; <code>document</code> &#x7684;&#x5C5E;&#x6027;,&#x83B7;&#x53D6;&#x9876;&#x5C42;DOM&#x6811;&#x5BF9;&#x8C61;&#xFF1A;</h5>
+<ul>
+<li>document.documentElement  &#x6307;&#x5411;html&#x5143;&#x7D20;&#xFF0C;&#x83B7;&#x53D6;&#x7684;&#x662F;html&#x8282;&#x70B9;&#x6811;</li>
+</ul>
+<pre><code class="lang-js">  <span class="hljs-keyword">var</span> html = <span class="hljs-built_in">document</span>.documentElement
+  <span class="hljs-built_in">console</span>.log(html);
+
+  <span class="hljs-comment">/*
+    &lt;html&gt;
+      &lt;head&gt;
+        &lt;meta charset=&quot;utf-8&quot;&gt;
+        &lt;title&gt;DOM&lt;/title&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+      &lt;/body&gt;
+    &lt;/html&gt;
+  */</span>
+</code></pre>
+<ul>
+<li>document.body &#x6307;&#x5411;&#x7684;&#x662F;body&#x5143;&#x7D20;</li>
+<li><p>document.head &#x6307;&#x5411;&#x7684;&#x662F;head&#x5143;&#x7D20;</p>
+</li>
+<li><p>document.title &#x83B7;&#x53D6;&#x5230;&#x6587;&#x7AE0;&#x7684;&#x6807;&#x9898;title</p>
+<pre><code class="lang-js"><span class="hljs-comment">//&#x8BBE;&#x7F6E;&#x6807;&#x9898;&#xFF1A;</span>
+<span class="hljs-built_in">document</span>.title = <span class="hljs-string">&apos;abcdefg&apos;</span>;
+</code></pre>
+</li>
+<li><p>document.URL &#x83B7;&#x53D6;&#x5730;&#x5740;&#x680F;&#x4E2D;&#x5B8C;&#x6574;&#x7684;URL</p>
+</li>
+<li>document.domain &#x83B7;&#x53D6;&#x57DF;&#x540D; [document.domain &#x53EF;&#x4EE5;&#x4FEE;&#x6539;&#x57DF;&#x540D;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x6765;&#x8FDB;&#x884C;&#x4E0D;&#x540C;&#x57DF;&#x7684;&#x8DE8;&#x57DF;]</li>
+<li>document.referrer &#x83B7;&#x53D6;&#x6E90;&#x9875;&#x9762;&#x7684; URL</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 0.  前 言">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="3.1.html" class="navigation navigation-next " aria-label="Next page: 3.1 查找DOM元素">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"3. DOM","level":"1.2","depth":1,"next":{"title":"3.1 查找DOM元素","level":"1.2.1","depth":2,"path":"3.1.md","ref":"3.1.md","articles":[]},"previous":{"title":"0.  前 言","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"3.DOM.md","mtime":"2017-12-17T03:39:54.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-12-16T10:35:25.692Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

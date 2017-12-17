@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <h1>test</h1>
+    <button onclick="wopen();">打开</button>
+
+    <!-- <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js" charset="utf-8"></script> -->
+    <script type="text/javascript">
+
+      // var a = 1000;
+      // console.log(window.a == a);
+      //
+      // // demo2
+      // var b = 200;
+      // function getNum(){
+      //   console.log(this === window);
+      //   return this.b;
+      // }
+      // var num = getNum();
+      // console.log(num); //200
+      //
+      // console.log('--------------');
+
+      //alert('innerWidth',window.innerWidth);
+      //alert('innerHeight',window.innerHeight);
+      //alert('outerWidth',window.outerWidth);
+      //alert('outerHeight',window.outerHeight);
+
+      // var w = document.documentElement.clientWidth;
+      // var h = document.documentElement.clientHeight;
+      // alert(w);
+      // alert(h);
+
+      // alert($(window).width())
+      // debugger;
+      // alert($(window).height())
+
+      // alert(window.innerWidth);
+      // alert(window.innerHeight)
+
+      // function wopen(){
+      //   window.open('https://www.baidu.com/');
+      // }
+
+      function wopen(){
+
+        // setTimeout(function(){
+        //   window.location.replace('https://www.baidu.com/');
+        // },1000);
+
+        // window.location.reload();
+
+        // return;
+
+        window.open('2.html','_self');
+      }
+
+      // function wopen(){
+      //   var newWindow = window.open('','_blank');
+      //   newWindow.document.write('hello');
+      // }
+
+      // console.log(window.location);
+
+      // window.location.search 参数 ===> json键值对
+      // var params = '';
+      // var params1 = '?keyfrom=fanyi-new-nav';
+      // var params2 = '?keyfrom=fanyi-new-nav&id=12323322&name=jfkshdfjkh';
+      //
+      // // var msg = getQueryStringArgs(params);
+      // // var msg = getQueryStringArgs(params1);
+      // var msg = getQueryStringArgs(params2);
+      // console.log(msg);
+      //
+      // function getQueryStringArgs(str){
+      //   // str = window.location.search;
+      //   var qs = str.length > 0 ? str.substring(1) : '';
+      //
+      //   var items = qs.length > 0 ? qs.split('&') : [];
+      //
+      //   var obj = {};
+      //
+      //   var len = items.length,
+      //       item = null;
+      //
+      //   for(var i=0;i < len; i++){
+      //     item = items[i].split('=');
+      //     obj[item[0]] = item[1];
+      //   }
+      //
+      //   return obj;
+      //
+      // }
+
+
+
+
+
+    </script>
+  </body>
+</html>

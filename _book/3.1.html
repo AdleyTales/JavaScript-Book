@@ -1,0 +1,445 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>3.1 查找DOM元素 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="3.2.html" />
+    
+    
+    <link rel="prev" href="3.DOM.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    0.  前 言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="3.DOM.html">
+            
+                <a href="3.DOM.html">
+            
+                    
+                    3. DOM
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.1" data-path="3.1.html">
+            
+                <a href="3.1.html">
+            
+                    
+                    3.1 查找DOM元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="3.2.html">
+            
+                <a href="3.2.html">
+            
+                    
+                    3.2 DOM元素的名称和属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="3.3.html">
+            
+                <a href="3.3.html">
+            
+                    
+                    3.3 创建DOM元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="4.BOM.html">
+            
+                <a href="4.BOM.html">
+            
+                    
+                    4. BOM
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="4.1.html">
+            
+                <a href="4.1.html">
+            
+                    
+                    4.1 获取浏览器窗口大小
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="4.2.html">
+            
+                <a href="4.2.html">
+            
+                    
+                    4.2 打开新窗口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="4.3.html">
+            
+                <a href="4.3.html">
+            
+                    
+                    4.3 定时器和延时器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="4.4.html">
+            
+                <a href="4.4.html">
+            
+                    
+                    4.4 location对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="4.5.html">
+            
+                <a href="4.5.html">
+            
+                    
+                    4.5 navigator对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="4.6.html">
+            
+                <a href="4.6.html">
+            
+                    
+                    4.6 screen对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="4.7.html">
+            
+                <a href="4.7.html">
+            
+                    
+                    4.7 history对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >3.1 查找DOM元素</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="&#x67E5;&#x627E;dom&#x5143;&#x7D20;">&#x67E5;&#x627E;DOM&#x5143;&#x7D20;</h3>
+<ul>
+<li><p>document &#x4E3B;&#x8981;&#x63D0;&#x4F9B;&#x4E86;&#x4E24;&#x79CD;&#x83B7;&#x53D6;&#x5143;&#x7D20;&#x7684;&#x65B9;&#x6CD5;&#xFF1A;</p>
+<ul>
+<li>document.getElementById() &#x53EA;&#x8FD4;&#x56DE;&#x6587;&#x6863;&#x4E2D;&#x7B2C;&#x4E00;&#x6B21;&#x51FA;&#x73B0;&#x7684;&#x5143;&#x7D20; &#x53C2;&#x6570;&#xFF1A;&#x4F20;&#x5165;&#x5143;&#x7D20;ID&#x503C;</li>
+<li>document.getElementsByTagName() &#x83B7;&#x53D6;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x96C6;&#x5408; &#x53C2;&#x6570;&#xFF1A;&#x4F20;&#x5165;&#x5143;&#x7D20;&#x7684;&#x8282;&#x70B9;&#x540D;&#x79F0;</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-js">  // getElementById
+  //html:
+    &lt;div id=&quot;mCon&quot;&gt;&#x8FD9;&#x662F;&#x6211;&#x8981;&#x5199;&#x7684;&#x5185;&#x5BB9;&lt;/div&gt;
+  //js:
+    var mConText = document.getElementById(&apos;mCon&apos;);
+    console.log(mConText); //&lt;div id=&quot;mCon&quot;&gt;&#x8FD9;&#x662F;&#x6211;&#x8981;&#x5199;&#x7684;&#x5185;&#x5BB9;&lt;/div&gt;
+
+  //getElementsByTagName
+  //html:
+    &lt;ul&gt;
+      &lt;li&gt;0&lt;/li&gt;
+      &lt;li&gt;1&lt;/li&gt;
+      &lt;li&gt;2&lt;/li&gt;
+      &lt;li&gt;3&lt;/li&gt;
+      &lt;li&gt;4&lt;/li&gt;
+    &lt;/ul&gt;
+  //js:
+    var ali = document.getElementsByTagName(&apos;li&apos;);
+    console.log(ali); // &#x8FD4;&#x56DE;[li&#x5BF9;&#x8C61;,lili&#x5BF9;&#x8C61;,lili&#x5BF9;&#x8C61;,lili&#x5BF9;&#x8C61;,lili&#x5BF9;&#x8C61;]
+</code></pre>
+<ul>
+<li>getElementsByName()  &#x8FD4;&#x56DE;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x96C6;&#x5408;  &#x83B7;&#x53D6;&#x6240;&#x6709;&#x5143;&#x7D20;&#x4E2D;&#x6709;name&#x5C5E;&#x6027;&#x4E3A;&#x4F20;&#x5165;&#x53C2;&#x6570;&#x7684;&#x5143;&#x7D20;</li>
+</ul>
+<h4 id="&#x65B0;&#x589E;&#x7684;&#x83B7;&#x53D6;&#x5143;&#x7D20;&#x7684;&#x65B9;&#x6CD5;&#xFF1A;&#xFF08;&#x6709;&#x517C;&#x5BB9;&#x95EE;&#x9898;&#xFF09;">&#x65B0;&#x589E;&#x7684;&#x83B7;&#x53D6;&#x5143;&#x7D20;&#x7684;&#x65B9;&#x6CD5;&#xFF1A;&#xFF08;&#x6709;&#x517C;&#x5BB9;&#x95EE;&#x9898;&#xFF09;</h4>
+<ul>
+<li>document.getElementByClassName() &#x83B7;&#x53D6;&#x6240;&#x6709;&#x7C7B;&#x540D;&#x76F8;&#x540C;&#x7684;&#x5143;&#x7D20; &#x96C6;&#x5408;</li>
+<li>document.querySelector() &#x53EF;&#x4EE5;&#x83B7;&#x53D6; id class &#x5143;&#x7D20;&#x7684;&#x65B9;&#x6CD5; &#x53EA;&#x8FD4;&#x56DE;&#x7B2C;&#x4E00;&#x4E2A;,&#x8981;&#x8FD4;&#x56DE;&#x6240;&#x6709;&#x7528;&#x4E0B;&#x4E00;&#x4E2A;</li>
+<li>document.querySelectorAll() &#x8FD4;&#x56DE;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x96C6;&#x5408; &#x83B7;&#x53D6;&#x6240;&#x6709;&#x7684;&#x5143;&#x7D20;</li>
+</ul>
+<h4 id="&#x5176;&#x4ED6;&#x83B7;&#x53D6;&#x5143;&#x7D20;&#x7684;&#x65B9;&#x6CD5;&#xFF1A;">&#x5176;&#x4ED6;&#x83B7;&#x53D6;&#x5143;&#x7D20;&#x7684;&#x65B9;&#x6CD5;&#xFF1A;</h4>
+<ul>
+<li>document.images &#x83B7;&#x53D6;&#x6587;&#x6863;&#x4E2D;&#x6240;&#x6709;img&#x5143;&#x7D20; &#x4E0E;docu.getElementsByTagName(&apos;img&apos;)&#x4E00;&#x6837;</li>
+<li>document.forms &#x83B7;&#x53D6;&#x6240;&#x6709;&#x7684;form&#x8868;&#x5355;</li>
+<li>document.links &#x83B7;&#x53D6;&#x6240;&#x6709;&#x5E26;href&#x5C5E;&#x6027;&#x7684;a&#x6807;&#x7B7E;</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="3.DOM.html" class="navigation navigation-prev " aria-label="Previous page: 3. DOM">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="3.2.html" class="navigation navigation-next " aria-label="Next page: 3.2 DOM元素的名称和属性">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"3.1 查找DOM元素","level":"1.2.1","depth":2,"next":{"title":"3.2 DOM元素的名称和属性","level":"1.2.2","depth":2,"path":"3.2.md","ref":"3.2.md","articles":[]},"previous":{"title":"3. DOM","level":"1.2","depth":1,"path":"3.DOM.md","ref":"3.DOM.md","articles":[{"title":"3.1 查找DOM元素","level":"1.2.1","depth":2,"path":"3.1.md","ref":"3.1.md","articles":[]},{"title":"3.2 DOM元素的名称和属性","level":"1.2.2","depth":2,"path":"3.2.md","ref":"3.2.md","articles":[]},{"title":"3.3 创建DOM元素","level":"1.2.3","depth":2,"path":"3.3.md","ref":"3.3.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"3.1.md","mtime":"2017-12-17T04:20:05.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-12-16T10:35:25.692Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

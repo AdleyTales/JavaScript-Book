@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>DOM</title>
+  </head>
+  <body>
+    <ul>
+      <li>0</li>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+    </ul>
+
+    <div id="mCon">这是我要写的内容</div>
+    <div id="mp">这是我要写的内容</div>
+
+    <div name='mname'>aaa</div>
+    <input type="text" name="mname" value="000">
+    <input type="text" name="mname" value="111">
+    <input type="text" name="mname" value="222">
+
+    <a href="">1</a>
+    <a href="">1</a>
+    <a href="">1</a>
+    <a href="">1</a>
+    <a class="a">2</a>
+    <a class="a">2</a>
+    <a class="a">2</a>
+    <a class="a">2</a>
+    <a>2</a>
+    <a>2</a>
+    <a>2</a>
+
+    <script>
+      // var oUl = document.querySelector('ul');
+      // console.log(oUl.children);
+      // console.log(oUl.childNodes);
+      // console.log(oUl.firstChild);
+
+      // var html = document.documentElement
+      // console.log(html);
+
+      // var url = document.URL;
+      // console.log(url);
+
+      // var mConText = document.getElementById('mCon');
+      // console.log(mConText); //<div id="mCon">这是我要写的内容</div>
+
+      // var ali = document.getElementsByTagName('li');
+      // console.log(ali); // 返回[li对象,lili对象,lili对象,lili对象,lili对象]
+
+
+      // var mname = document.getElementsByName('mname');
+      // console.log(mname);
+
+      // var as = document.links;
+      // console.log(as);
+
+      // var ali = document.querySelector('li');
+      // var alis = document.querySelectorAll('li');
+      // console.log(ali);
+      // console.log(alis);
+
+      // var aa = document.querySelector('.a');
+      // console.log(aa);
+
+      // var mp = document.getElementById('mp');
+      // console.log(mp.tagName); //DIV
+      // console.log(mp.nodeName); // DIV
+      //
+      // if(mp.tagName.toLowerCase() == 'div'){
+      //   console.log('ok');
+      // }
+
+      var a = document.createElement('a');
+      a.href = 'http://www.baidu.com/';
+
+      var style1 = {
+        color: '#f00',
+        'fontSize': '36px'
+      }
+
+      for(var x in style1){
+        a.style[x] = style1[x];
+      }
+
+      a.id = 'mya';
+      a.className = 'mya';
+
+      a.innerHTML = '这是创建的标签';
+
+      document.body.append(a);
+
+    </script>
+  </body>
+</html>
